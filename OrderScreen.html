@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fat Burger Order Screen</title>
+<link rel="stylesheet" type="text/css" href="OrderScreenStyle.css">
+<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-messaging.js"></script>
+</head>
+<body>
+<div id="landing">
+        <img class="logo" src="logo1.png" >
+        <h1>Staff Login</h1>
+        <div id=order>
+        </div>
+       <div class="form">
+          <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="uname" id="username" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+            <div class = login>
+            <button type="submit" id=loginbutton  value="Login" onclick="guesswhosback2()">Login</button>
+          </div>
+          </div>
+          </div>
+        </div>
+<div id="main">
+<header>
+    <h2>Staff Interface</h2>
+    <h3 id="hello"></h3>
+    <button id="logbtn" class="button1" type="button" onclick="signout()">Signout</button>
+    <button id="statsbtn" class="button1" type="button">Stock</button>
+    <button id="stockbtn" class="button1" type="button">Orders</button>
+   
+</header>
+
+<div id="content1">
+
+<div id="stockContent">
+<div id="orderList" class="flex"></div>
+</div>
+
+
+<div id="statsContent" class="">
+        <span style="display:inline-block; width: 20px;"></span>
+    <div id="container">
+            <div id="inner">
+    </div>
+</div>
+</div>
+<script src="OrderScreenScript.js"></script>
+</div>
+</div>
+</body>
+</html>
